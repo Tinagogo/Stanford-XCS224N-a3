@@ -105,6 +105,9 @@ class ParserModel(nn.Module):
             @return x (Tensor): tensor of embeddings for words represented in t
                                 (batch_size, n_features * embed_size)
         """
+
+        x = None
+        
         ### TODO:
         ###     1) Use `self.pretrained_embeddings` to lookup the embeddings for the input tokens in `t`.
         ###     2) After you apply the embedding lookup, you will have a tensor shape (batch_size, n_features, embedding_size).

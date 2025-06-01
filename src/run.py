@@ -16,7 +16,7 @@ if __name__ == "__main__":
 
     args_parser = argparse.ArgumentParser()
     args_parser.add_argument('--debug', action='store_true', default=False)
-    args_parser.add_argument("--device", type=str, default="cpu")
+    args_parser.add_argument("--device", type=str, default="gpu")
     args_parser.add_argument('--compile', action='store_true', default=False)
     args_parser.add_argument("--backend", type=str, default="inductor", choices=['inductor', 'aot_eager', 'cudagraphs'])
 

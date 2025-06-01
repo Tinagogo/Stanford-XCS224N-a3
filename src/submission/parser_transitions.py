@@ -66,6 +66,8 @@ def minibatch_parse(sentences, model, device, batch_size):
                       contain the parse for sentences[i]).
     """
 
+    dependencies = None
+
     ### START CODE HERE
     ### END CODE HERE
 
